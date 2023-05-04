@@ -27,4 +27,9 @@ SP3_add_python_module(
     DEPENDS      SofaPython3::Plugin SofaPython3::Bindings.Sofa Sofa.GL CosseratPlugin
 
 )
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_EXTENSIONS OFF)
+
 message("-- SofaPython3 bindings for CosseratPlugin will be created.")
