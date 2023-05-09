@@ -17,7 +17,6 @@ jobs:
         os: [ubuntu-20.04, macos-11, windows-2019]
         sofa_branch: [master]
         python_version: ['3.8']
-        pybind11_version: '2.6.2'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -47,6 +46,7 @@ jobs:
           sofa_scope: 'standard'
           sofa_with_sofapython3: 'false'
           python_version: '${{ matrix.python_version }}'
+          pybind11_version: '2.6.2'
 
       - name: Install SofaPython3
         shell: bash
