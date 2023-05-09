@@ -15,6 +15,7 @@ endif()
 
 sofa_find_package(Sofa.GL QUIET)
 
+set(CMAKE_CXX_STANDARD 17)
 SP3_add_python_module(
     TARGET       ${PROJECT_NAME}
     PACKAGE      Binding
